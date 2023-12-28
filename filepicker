@@ -1,2 +1,2 @@
 #!/bin/sh
-TMP="$(mktemp)" && st -c 'floating' -g '120x34+297+483' -e sh -c "ranger --choosefile='$TMP' 1>&2" && cat $TMP
+TMP="$(mktemp)" && st -c 'floating' -g '120x34+297+104' -e sh -c "ranger $1 --choosefile='$TMP' 1>&2" && cat $TMP

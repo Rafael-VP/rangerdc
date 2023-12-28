@@ -26,7 +26,7 @@ async def on_message(message):
     command = config['Main']['uploadcommand']
     if message.content[:len(command)] == command:
         await message.delete()
-        path = str(subprocess.check_output(["/bin/sh", os.environ['HOME'] + "/.config/rangerdc/filepicker"]))[:-1][2:]
+        path = str(subprocess.check_output(["/bin/sh", os.environ['HOME'] + "/.config/rangerdc/filepicker", config['Main']['defaultdir']]))[:-1][2:]
 
         if len(message.content) > len(command):
             text = message.content[len(command):]
