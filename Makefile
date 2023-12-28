@@ -6,10 +6,6 @@ TARGET = ${HOME}/.local/bin/rangerdc
 all: ${CONFIGPATH}config.ini
 	$(info ********** built **********)
 
-clean:
-	-rm ${TARGET}
-	-rm -rf ${CONFIGPATH}
-
 install: all config
 	cp rangerdc.py ${TARGET}
 	chmod +x ${TARGET}

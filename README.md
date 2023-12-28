@@ -10,4 +10,4 @@ Clone this repository, modify the parameters in `config.ini` and run:
 $ make
 $ make install
 ```
-You can disable any uneeded commands by replacing them with `""` in the `config.ini`.
+You can disable any unneeded commands by replacing them with `""` in the `config.ini`.
